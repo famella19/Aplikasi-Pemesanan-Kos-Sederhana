@@ -3,7 +3,6 @@ package org.d3if3018.asessment1
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import org.d3if3018.asessment1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -16,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.button.setOnClickListener { Mulai() }
+        binding.button.setOnClickListener{Mulai()}
     }
 
     fun Mulai() {

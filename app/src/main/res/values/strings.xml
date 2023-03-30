@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Asessment1</string>
-    <string name="namaApp">Pajak Bijak </string>
+    <string name="namaApp">Bijak Pajak </string>
     <string name="deskripsi">Dari Rakyat, Oleh Rakyat, Untuk Rakyat  </string>
     <string name="btnMulai">Mulai</string>
     <string name="motto">Orang Bijak, Tepat Pajak</string>
-    <string name="textSelamat">Selamat Datang \n Di Aplikasi Pembayaran Pajak</string>
-    <string name="formBayar">HITUNG PAJAK BUMI BANGUNAN</string>
+    <string name="textSelamat">Selamat Datang \n Di Aplikasi Perhitungan Pajak Bumi dan Bangunan</string>
+    <string name="formBayar">HITUNG PAJAK \n BUMI DAN BANGUNAN</string>
     <string name="textNama">Nama Lengkap</string>
     <string name="npwp">NPWP</string>
     <string name="jnsPajak">Jenis Pajak</string>
@@ -21,5 +21,9 @@
     <string name="nilaiJualTanah_invalid">Nilai Jual Tanah Tidak Boleh Kosong</string>
     <string name="luasBangunan_invalid">Luas Bangunan Tidak Boleh Kosong</string>
     <string name="nilaiJualBangunan_invalid">Nilai Jual Bangunan Tidak Boleh Kosong</string>
+    <string name="hitungPajak">Hitung Pajak</string>
+    <string name="message">%1$s Artikel Belum Tersedia</string>
+    <string name="format_NJKP">NJKP = %1$d/%2$d</string>
+    <string name="format_Pajak">Pajak Terbilang = %1$d/%2$d</string>
 
 </resources>
