@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Asessment1</string>
+    <string name="namaApp">Pajak Bijak </string>
+    <string name="deskripsi">Dari Rakyat, Oleh Rakyat, Untuk Rakyat  </string>
+    <string name="btnMulai">Mulai</string>
+    <string name="motto">Orang Bijak, Tepat Pajak</string>
+    <string name="textSelamat">Selamat Datang \n Di Aplikasi Pembayaran Pajak</string>
+    <string name="formBayar">HITUNG PAJAK BUMI BANGUNAN</string>
+    <string name="textNama">Nama Lengkap</string>
+    <string name="npwp">NPWP</string>
+    <string name="jnsPajak">Jenis Pajak</string>
+    <string name="thnPajak">Tahun Pajak</string>
+    <string name="uraianPjk">Uraian Pajak</string>
+    <string name="jmlSetor">Jumlah Setoran</string>
+    <string name="tglBayar">Tanggal Pembayaran</string>
+    <string name="btnReset">Reset</string>
+    <string name="btnHitung">Hitung</string>
+    <string name="judulArtikel">Jenis - Jenis Pajak di Indonesia</string>
+    <string name="artikel">"Artikel "</string>
+    <string name="luasTanah_invalid">Luas Tanah Tidak Boleh Kosong</string>
+    <string name="nilaiJualTanah_invalid">Nilai Jual Tanah Tidak Boleh Kosong</string>
+    <string name="luasBangunan_invalid">Luas Bangunan Tidak Boleh Kosong</string>
+    <string name="nilaiJualBangunan_invalid">Nilai Jual Bangunan Tidak Boleh Kosong</string>
+
+</resources>
