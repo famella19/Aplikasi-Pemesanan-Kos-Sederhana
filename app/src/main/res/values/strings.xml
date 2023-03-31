@@ -1,18 +1,8 @@
 <resources>
-    <string name="app_name">Asessment1</string>
-    <string name="namaApp">Bijak Pajak </string>
-    <string name="deskripsi">Dari Rakyat, Oleh Rakyat, Untuk Rakyat  </string>
+    <string name="app_name">BijakPajak</string>
     <string name="btnMulai">Mulai</string>
-    <string name="motto">Orang Bijak, Tepat Pajak</string>
-    <string name="textSelamat">Selamat Datang \n Di Aplikasi Perhitungan Pajak Bumi dan Bangunan</string>
+    <string name="textSelamat">Selamat Datang Di Aplikasi \n Nikamati Fitur - Fitur Aplikasi</string>
     <string name="formBayar">HITUNG PAJAK \n BUMI DAN BANGUNAN</string>
-    <string name="textNama">Nama Lengkap</string>
-    <string name="npwp">NPWP</string>
-    <string name="jnsPajak">Jenis Pajak</string>
-    <string name="thnPajak">Tahun Pajak</string>
-    <string name="uraianPjk">Uraian Pajak</string>
-    <string name="jmlSetor">Jumlah Setoran</string>
-    <string name="tglBayar">Tanggal Pembayaran</string>
     <string name="btnReset">Reset</string>
     <string name="btnHitung">Hitung</string>
     <string name="judulArtikel">Jenis - Jenis Pajak di Indonesia</string>
@@ -22,8 +12,72 @@
     <string name="luasBangunan_invalid">Luas Bangunan Tidak Boleh Kosong</string>
     <string name="nilaiJualBangunan_invalid">Nilai Jual Bangunan Tidak Boleh Kosong</string>
     <string name="hitungPajak">Hitung Pajak</string>
-    <string name="message">%1$s Artikel Belum Tersedia</string>
-    <string name="format_NJKP">NJKP = %1$d/%2$d</string>
-    <string name="format_Pajak">Pajak Terbilang = %1$d/%2$d</string>
+    <string name="cari">Cari</string>
+    <string name="cariPajak">Masukkan inputan</string>
+    <string name="inputAngka">Inputan tidak boleh berupa angka</string>
+    <string name="inputKarakter">Inputan tidak boleh berupa karakter!</string>
+    <string name="tidakTdkJelas">Tidak terdapat jenis pajak tersebut!</string>
+    <string name="keluar">Ingin keluar ?</string>
+    <string name="hapus">Hapus</string>
+    <string name="nama_app">Bijak Pajak</string>
+
+    <string name="pajakPBB">Pajak Bumi dan Bangunan</string>
+    <string name="pbb">Setiap kepemilikan properti seperti rumah, ruko dan
+        bangunan lain beserta tanahnya akan diwajibkan membayar pajak ini. Pajak ini merupakan biaya
+        yang harus disetorkan atas kepemilikan objek PBB yang memberikan keuntungan maupun kedudukan
+        sosial bagi individu atau badan.\n PBB sendiri dibagi atas dua sektor yaitu PBB sektor P2
+        berupa PBB bangunan perdesaan dan PBB bangunan perkotaan yang diadministrasi oleh
+        PemKot/Pemkab.\n Ada juga PBB sektor P3 berupa PBB bangunan perhutanan, pertambangan, dan
+        perkebunan yang diadministrasi oleh pemerintah pusat melalui Direktorat Jenderal Pajak.
+        Selain hunian ada objek pajak lain seperti sawah, ladang, kebub, tanah, pekarangan, tambang,
+        dan peternakan.</string>
+
+    <string name="pajakPPH">Pajak Penhasilan</string>
+    <string name="pph">Jenis pajak pertama harus dibayarkan oleh setiap wajib pajak dengan kriteria
+        khusus dengan penghasilan diatas Penghasilan Tidak Kena Pajak (PTKP).\n
+        Setiap penghasilan wajib pajak mulai dari gaji, keuntungan usaha dan masih banyak lagi.
+        Pajak PTKP sendiri telah diatur pada PMK No.101/PMK.010/2016. \n
+        Untuk wajib pajak pribadi belum kawin, akan dikenai pada seorang yang memiliki penghasilan
+        54 juta rupiah per tahunnya.\n
+        Untuk wajib pajak pribadi sudah kawin, akan dikenai pada seorang yang memiliki penghasilan
+        58,5 juta rupiah per tahunnya.</string>
+
+    <string name="pajakPPN">Pajak Pertambahan Nilai</string>
+    <string name="ppn">JJenis pajak di Indonesia selanjutnya adalah Pajak Pertambahan Nilai (PPN),
+        pajak ini dikenakan atas perdagangan barang maupun jasa yang dilakukan wajib pajak.\n
+        Kebanyakan wajib pajak adalah Pengusaha Kena Pajak (PKP). Walaupun pada dasarnya pelaku
+        usaha adalah penyetor pajak, namun kebanyakan pajak akan ditangguhkan pada pembeli.\n
+        PPN ini biasanya berkisar 10% dari harga produk yang dijual. Maka dari itu jika Anda
+        perhatikan pajak ini sering Anda jumpai saat membeli produk.\n
+        Meskipun PPN dikenakan atas perdagangan barang, hal ini tidak berlaku pada objek restoran.
+        Restoran memiliki pajak restoran tersendiri diluar dari objek pajak PPN.</string>
+
+    <string name="pajakPPNBM">Pajak Penjualan Barang Mewah</string>
+    <string name="ppnbm">PPnBM merupakan pajak dari penjualan barang mewah dengan banyak kriteria.
+        Berikut beberapa kriteria barang mewah yang diwajibkan membayar PPnBM : \n
+        Barang mewah yang bukan kebutuhan pokok. \n
+        Barang mewah yang dikonsumsi oleh masyarakat tertentu.\n
+        Barang mewah untuk kebutuhan eksistensi atau menunjukkan status.\n
+        Barang mewah yang beresiko merusak kesehatan, mengganggu ketertiban, dan mengganggu
+        kenyamanan masyarakat.\n
+        Kendaraan Mewah.\n
+        Hunian atau properti, dan masih banyak lagi.</string>
+
+    <string name="pajakBM">Bea Materai </string>
+    <string name="bm">Bea Materai termasuk salah satu pajak yang masuk dalam jenis jenis pajak
+        yang berlaku di Indonesia. Pajak ini dibebankan atas pemanfaatan dokumen yang memerlukan
+        meterai.Berbagai contoh dokumen dengan meterai seperti akta notaris, surat kuasa, bukti
+        transaksi, perjanjian jasa dan masih banyak lagi.\n Nilai BM sendiri memiliki ragam nominal
+        untuk ketentuan masing masing, seperti meterai Rp 6000 untuk transaksi dengan nilai diatas
+        250 ribu hingga 5 juta. Ada juga meterai dengan nilai Rp 10.000 untuk nilai transaksi diatas
+        10 juta rupiah.</string>
+
+    <string name="pajakPAD">Pajak Daerah </string>
+    <string name="pad">Jenis pajak ini berbeda dengan jenis pajak lainnya, karena
+        pajak ini tidak disetorkan ke pusat melainkan sebuah kontribusi wajib untukdaerah dan
+        keperluan daerah. Dalam administrasi negara, khususnya pemda terbagi menjadi pemerintahan
+        provinsi dan pemerintahan kabupaten/kota.</string>
+
+
 
 </resources>

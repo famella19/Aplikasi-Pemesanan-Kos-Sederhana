@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import org.d3if3018.asessment1.databinding.ActivityPerhitunganPajakBinding
 
@@ -66,6 +67,18 @@ class PerhitunganPajak : AppCompatActivity() {
         fun artikel() {
         val intent = Intent(this, MainArtikel::class.java)
         startActivity(intent)
+    }
+
+    override fun onBackPressed() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle(R.string.app_name)
+        builder.setMessage(R.string.keluar)
+        builder.setPositiveButton("Ya") { _, _ ->
+            this.finish()
+        }
+        builder.setNegativeButton("Tidak") { _, _ -> }
+        builder.setCancelable(false)
+        builder.show()
     }
 
 }
