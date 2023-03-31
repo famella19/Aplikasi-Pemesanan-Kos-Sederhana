@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#72A4FF</color>
+    <color name="primary">#16283C</color>
     <color name="background">#F7F7FA</color>
-    <color name="primari_text">#565B65</color>
-    <color name="secondary_text">#9B9A9D</color>
+    <color name="primari_text">#F7F7FA</color>
+    <color name="secondary_text">#FCFCFD</color>
     <color name="main">#6A7CFF</color>
     <color name="artikel">#2CC2EA</color>
     <color name="hitung">#8B72FF</color>
-    <color name="blue"></color>
+    <color name="pink_200">#F48FB1</color>
+    <color name="pink_500">#E91E63</color>
+    <color name="pink_700">#C2185B</color>
 </resources>

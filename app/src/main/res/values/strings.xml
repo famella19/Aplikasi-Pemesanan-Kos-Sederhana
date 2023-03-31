@@ -17,7 +17,7 @@
     <string name="inputAngka">Inputan tidak boleh berupa angka</string>
     <string name="inputKarakter">Inputan tidak boleh berupa karakter!</string>
     <string name="tidakTdkJelas">Tidak terdapat jenis pajak tersebut!</string>
-    <string name="keluar">Ingin keluar ?</string>
+    <string name="keluar">Ingin keluar dari halaman ini ?</string>
     <string name="hapus">Hapus</string>
     <string name="nama_app">Bijak Pajak</string>
 

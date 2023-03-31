@@ -17,6 +17,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="20dp"
+            android:fontFamily="@font/dm_sans_bold"
+            android:textColor="@color/primari_text"
             android:text="@string/formBayar"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -35,11 +37,12 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inpLuasTanah"
-            android:inputType="number"
-            android:textSize="16sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Luas Tanah (m)"/>
+            android:fontFamily="@font/aleo"
+            android:hint="Luas Tanah (m)"
+            android:inputType="number"
+            android:textSize="16sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -55,11 +58,12 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inpNilJualTnh"
-            android:inputType="number"
-            android:textSize="16sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nilai Jual Tanah (Rp)"/>
+            android:fontFamily="@font/aleo"
+            android:hint="Nilai Jual Tanah (Rp)"
+            android:inputType="number"
+            android:textSize="16sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -95,11 +99,12 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inpNilJualBang"
-            android:inputType="number"
-            android:textSize="16sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nilai Jual Bangunan (Rp)"/>
+            android:fontFamily="@font/aleo"
+            android:hint="Nilai Jual Bangunan (Rp)"
+            android:inputType="number"
+            android:textSize="16sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -109,6 +114,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="120dp"
             android:layout_marginTop="16dp"
+            android:fontFamily="@font/aleo"
             android:text="@string/btnHitung"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -121,6 +127,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="20dp"
+            android:fontFamily="@font/aleo"
             android:text="@string/btnReset"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -137,25 +144,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnHitung" />
 
-    <TextView
-        android:id="@+id/teksNJKP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider" />
+        <TextView
+            android:id="@+id/teksNJKP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/assistant_semibold"
+            android:textColor="@color/primari_text"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
 
-    <TextView
-        android:id="@+id/teksPajak"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:layout_marginTop="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/teksNJKP" />
+        <TextView
+            android:id="@+id/teksPajak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/assistant_semibold"
+            android:textColor="@color/primari_text"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/teksNJKP" />
 
         <ImageView
             android:id="@+id/news"

@@ -2,8 +2,9 @@
     <!-- Base application theme. -->
     <style name="Theme.Asessment1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/primary</item>
-        <item name="android:statusBarColor">@color/primary</item>
+        <item name="colorPrimary">@color/pink_500</item>
+        <item name="colorPrimaryVariant">@color/pink_700</item>
+        <item name="colorOnPrimary">@color/background</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>
