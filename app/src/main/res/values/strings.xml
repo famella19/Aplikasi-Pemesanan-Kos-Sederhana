@@ -77,7 +77,8 @@
         pajak ini tidak disetorkan ke pusat melainkan sebuah kontribusi wajib untukdaerah dan
         keperluan daerah. Dalam administrasi negara, khususnya pemda terbagi menjadi pemerintahan
         provinsi dan pemerintahan kabupaten/kota.</string>
-
+    <string name="njkp_x">NJKP : %1$.0f Juta</string>
+    <string name="pajak_x">Pajak Yang Harus Dibayarkan : %1$.0f</string>
 
 
 </resources>

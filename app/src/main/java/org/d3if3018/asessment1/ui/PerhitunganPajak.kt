@@ -1,4 +1,4 @@
-package org.d3if3018.asessment1
+package org.d3if3018.asessment1.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,11 +6,19 @@ import android.text.TextUtils
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
+import org.d3if3018.asessment1.MainArtikel
+import org.d3if3018.asessment1.R
 import org.d3if3018.asessment1.databinding.ActivityPerhitunganPajakBinding
+import org.d3if3018.asessment1.model.HasilPajak
+import org.d3if3018.asessment1.model.MainViewModel
 
 class PerhitunganPajak : AppCompatActivity() {
 
     private lateinit var binding: ActivityPerhitunganPajakBinding
+    private val viewModel: MainViewModel by lazy {
+        ViewModelProvider(this)[MainViewModel::class.java]
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +27,8 @@ class PerhitunganPajak : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnHitung.setOnClickListener {hitungPajak() }
+        viewModel.getHasilHitung().observe(this,{showResult(it)})
+
         binding.btnReset.setOnClickListener {ressetPajak()}
         binding.news.setOnClickListener{artikel()}
 }
@@ -48,14 +58,24 @@ class PerhitunganPajak : AppCompatActivity() {
             return
         }
 
-        val njkp = 0.20 * ((luasTanah.toInt() * nilaiJualTanah.toInt()) + (luasBangunan.toInt() * nilaiJualBangunan.toInt()))
-        val pajak = 0.005 * njkp
-
-        binding.teksNJKP.text = ("NJKP: " + njkp / 1000000 + "Juta")
-        binding.teksPajak.text = ("Pajak : " + pajak)
+        viewModel.hitungPajak(
+            luasTanah.toDouble(),
+            nilaiJualTanah.toDouble(),
+            luasBangunan.toDouble(),
+            nilaiJualBangunan.toDouble()
+        )
     }
 
-        private fun ressetPajak(){
+    private fun showResult(result: HasilPajak?){
+        if (result == null) return
+
+        binding.teksNJKP.text = getString(R.string.njkp_x, result.njkp)
+//        binding.teksNJKP.text = result.njkp.toDouble()
+        binding.teksPajak.text = getString(R.string.pajak_x, result.pajak)
+    }
+
+
+    private fun ressetPajak(){
             binding.inpLuasTanah.text!!.clear()
             binding.inpLuasBangunan.text!!.clear()
             binding.inpNilJualTnh.text!!.clear()

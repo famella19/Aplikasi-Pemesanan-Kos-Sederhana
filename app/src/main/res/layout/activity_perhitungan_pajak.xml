@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PerhitunganPajak"
+    tools:context=".ui.PerhitunganPajak"
     android:background="#16283C">
 
     <androidx.constraintlayout.widget.ConstraintLayout

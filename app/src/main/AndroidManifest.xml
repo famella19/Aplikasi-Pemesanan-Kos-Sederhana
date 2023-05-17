@@ -16,10 +16,10 @@
             android:name=".MainArtikel"
             android:exported="false" />
         <activity
-            android:name=".PerhitunganPajak"
+            android:name=".ui.PerhitunganPajak"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
