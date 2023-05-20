@@ -14,6 +14,6 @@ interface PajakDao {
     @Query("SELECT * FROM pajak order By id DESC")
     fun getLastPajak(): LiveData<List<PajakEntity>>
 
-    @Query("DELETE FROM pajak order By id")
+    @Query("DELETE FROM pajak ")
     fun clearData()
 }

@@ -28,7 +28,7 @@ class ArtikelAdapter : RecyclerView.Adapter<ArtikelAdapter.ViewHolder>() {
             gambarPajak.setImageResource(artikel.image)
 
             root.setOnClickListener{
-                val message = "Jenis {Artikel.kepanjangan} !!"
+                val message = "Jenis {model.Artikel.kepanjangan} !!"
                 Toast.makeText(root.context, message, Toast.LENGTH_LONG).show()
             }
         }

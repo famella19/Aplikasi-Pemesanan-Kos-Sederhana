@@ -61,7 +61,7 @@ class HistoriAdapter : ListAdapter <PajakEntity, HistoriAdapter.ViewHolder>(DIFF
 
             tanggalTextView.text = dateFormatter.format(Date(item.tanggal))
             njkp.text = root.context.getString(R.string.hasil_x, hasilPajak.njkp)
-            pajak.text = root.context.getString(R.string.pajak_x)
+            pajak.text = root.context.getString(R.string.pajak_x, hasilPajak.pajak)
         }
     }
 }

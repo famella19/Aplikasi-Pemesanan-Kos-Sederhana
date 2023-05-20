@@ -131,6 +131,7 @@ class PerhitunganPajakFragment : Fragment() {
     private fun showResult(result: HasilPajak?){
         if (result == null) return
 
+        binding.shareButton.visibility = View.VISIBLE
         binding.teksNJKP.text = getString(R.string.njkp_x, result.njkp)
         binding.teksPajak.text = getString(R.string.pajak_x, result.pajak)
     }

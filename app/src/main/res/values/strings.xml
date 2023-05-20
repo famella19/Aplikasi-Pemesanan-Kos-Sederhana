@@ -78,8 +78,8 @@
 <!--        keperluan daerah. Dalam administrasi negara, khususnya pemda terbagi menjadi pemerintahan-->
 <!--        provinsi dan pemerintahan kabupaten/kota.</string>-->
 
-    <string name="njkp_x">NJKP : %1$.0f Juta</string>
-    <string name="pajak_x">Pajak Yang Terutang : %1$.0f </string>
+    <string name="njkp_x">NJKP : %.0f Juta</string>
+    <string name="pajak_x">Pajak Yang Terutang : %1.2f</string>
     <string name="deksHal">Jenis - Jenis Pajak Di Indonesia</string>
     <string name="rumus">Cara Menghitung PBB</string>
     <string name="judul_detail">Cara Menghitung PBB</string>
