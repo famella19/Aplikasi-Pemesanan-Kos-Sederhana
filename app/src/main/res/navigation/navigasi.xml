@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigasi"
+    app:startDestination="@id/perhitunganPajakFragment">
+
+    <fragment
+        android:id="@+id/perhitunganPajakFragment"
+        android:name="org.d3if3018.asessment1.ui.PerhitunganPajakFragment"
+        android:label="BIJAK PAJAK"
+        tools:layout="@layout/fragment_perhitungan_pajak">
+        <action
+            android:id="@+id/action_perhitunganPajakFragment_to_detailHitungFragment"
+            app:destination="@id/detailHitungFragment" />
+        <action
+            android:id="@+id/action_perhitunganPajakFragment_to_aboutUs"
+            app:destination="@id/aboutUs" />
+        <action
+            android:id="@+id/action_perhitunganPajakFragment_to_artikelFragment"
+            app:destination="@id/artikelFragment" />
+        <action
+            android:id="@+id/action_perhitunganPajakFragment_to_historyFragment2"
+            app:destination="@id/historyFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailHitungFragment"
+        android:name="org.d3if3018.asessment1.ui.Informasi.InformasiFragment"
+        android:label="@string/judulInformasi"
+        tools:layout="@layout/fragment_informasi"/>
+    <fragment
+        android:id="@+id/aboutUs"
+        android:name="org.d3if3018.asessment1.ui.AboutUs.AboutUs"
+        android:label="@string/judulAbout"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/artikelFragment"
+        android:name="org.d3if3018.asessment1.ui.Artikel.ArtikelFragment"
+        android:label="@string/artikel"
+        tools:layout="@layout/list_artikel" />
+    <fragment
+        android:id="@+id/historyFragment2"
+        android:name="org.d3if3018.asessment1.ui.History.HistoryFragment"
+        android:label="@string/historiJudul"
+        tools:layout="@layout/fragment_history" />
+</navigation>

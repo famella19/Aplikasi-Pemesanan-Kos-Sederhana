@@ -6,7 +6,7 @@
     <string name="btnReset">Reset</string>
     <string name="btnHitung">Hitung</string>
     <string name="judulArtikel">Jenis - Jenis Pajak di Indonesia</string>
-    <string name="artikel">"Artikel "</string>
+    <string name="artikel">"ARTIKEL "</string>
     <string name="luasTanah_invalid">Luas Tanah Tidak Boleh Kosong</string>
     <string name="nilaiJualTanah_invalid">Nilai Jual Tanah Tidak Boleh Kosong</string>
     <string name="luasBangunan_invalid">Luas Bangunan Tidak Boleh Kosong</string>
@@ -21,64 +21,110 @@
     <string name="hapus">Hapus</string>
     <string name="nama_app">Bijak Pajak</string>
 
-    <string name="pajakPBB">Pajak Bumi dan Bangunan</string>
-    <string name="pbb">Setiap kepemilikan properti seperti rumah, ruko dan
-        bangunan lain beserta tanahnya akan diwajibkan membayar pajak ini. Pajak ini merupakan biaya
-        yang harus disetorkan atas kepemilikan objek PBB yang memberikan keuntungan maupun kedudukan
-        sosial bagi individu atau badan.\n PBB sendiri dibagi atas dua sektor yaitu PBB sektor P2
-        berupa PBB bangunan perdesaan dan PBB bangunan perkotaan yang diadministrasi oleh
-        PemKot/Pemkab.\n Ada juga PBB sektor P3 berupa PBB bangunan perhutanan, pertambangan, dan
-        perkebunan yang diadministrasi oleh pemerintah pusat melalui Direktorat Jenderal Pajak.
-        Selain hunian ada objek pajak lain seperti sawah, ladang, kebub, tanah, pekarangan, tambang,
-        dan peternakan.</string>
+<!--    <string name="pajakPBB">Pajak Bumi dan Bangunan</string>-->
+<!--    <string name="pbb">Setiap kepemilikan properti seperti rumah, ruko dan-->
+<!--        bangunan lain beserta tanahnya akan diwajibkan membayar pajak ini. Pajak ini merupakan biaya-->
+<!--        yang harus disetorkan atas kepemilikan objek PBB yang memberikan keuntungan maupun kedudukan-->
+<!--        sosial bagi individu atau badan.\n PBB sendiri dibagi atas dua sektor yaitu PBB sektor P2-->
+<!--        berupa PBB bangunan perdesaan dan PBB bangunan perkotaan yang diadministrasi oleh-->
+<!--        PemKot/Pemkab.\n Ada juga PBB sektor P3 berupa PBB bangunan perhutanan, pertambangan, dan-->
+<!--        perkebunan yang diadministrasi oleh pemerintah pusat melalui Direktorat Jenderal Pajak.-->
+<!--        Selain hunian ada objek pajak lain seperti sawah, ladang, kebub, tanah, pekarangan, tambang,-->
+<!--        dan peternakan.</string>-->
 
-    <string name="pajakPPH">Pajak Penhasilan</string>
-    <string name="pph">Jenis pajak pertama harus dibayarkan oleh setiap wajib pajak dengan kriteria
-        khusus dengan penghasilan diatas Penghasilan Tidak Kena Pajak (PTKP).\n
-        Setiap penghasilan wajib pajak mulai dari gaji, keuntungan usaha dan masih banyak lagi.
-        Pajak PTKP sendiri telah diatur pada PMK No.101/PMK.010/2016. \n
-        Untuk wajib pajak pribadi belum kawin, akan dikenai pada seorang yang memiliki penghasilan
-        54 juta rupiah per tahunnya.\n
-        Untuk wajib pajak pribadi sudah kawin, akan dikenai pada seorang yang memiliki penghasilan
-        58,5 juta rupiah per tahunnya.</string>
+<!--    <string name="pajakPPH">Pajak Penhasilan</string>-->
+<!--    <string name="pph">Jenis pajak pertama harus dibayarkan oleh setiap wajib pajak dengan kriteria-->
+<!--        khusus dengan penghasilan diatas Penghasilan Tidak Kena Pajak (PTKP).\n-->
+<!--        Setiap penghasilan wajib pajak mulai dari gaji, keuntungan usaha dan masih banyak lagi.-->
+<!--        Pajak PTKP sendiri telah diatur pada PMK No.101/PMK.010/2016. \n-->
+<!--        Untuk wajib pajak pribadi belum kawin, akan dikenai pada seorang yang memiliki penghasilan-->
+<!--        54 juta rupiah per tahunnya.\n-->
+<!--        Untuk wajib pajak pribadi sudah kawin, akan dikenai pada seorang yang memiliki penghasilan-->
+<!--        58,5 juta rupiah per tahunnya.</string>-->
 
-    <string name="pajakPPN">Pajak Pertambahan Nilai</string>
-    <string name="ppn">JJenis pajak di Indonesia selanjutnya adalah Pajak Pertambahan Nilai (PPN),
-        pajak ini dikenakan atas perdagangan barang maupun jasa yang dilakukan wajib pajak.\n
-        Kebanyakan wajib pajak adalah Pengusaha Kena Pajak (PKP). Walaupun pada dasarnya pelaku
-        usaha adalah penyetor pajak, namun kebanyakan pajak akan ditangguhkan pada pembeli.\n
-        PPN ini biasanya berkisar 10% dari harga produk yang dijual. Maka dari itu jika Anda
-        perhatikan pajak ini sering Anda jumpai saat membeli produk.\n
-        Meskipun PPN dikenakan atas perdagangan barang, hal ini tidak berlaku pada objek restoran.
-        Restoran memiliki pajak restoran tersendiri diluar dari objek pajak PPN.</string>
+<!--    <string name="pajakPPN">Pajak Pertambahan Nilai</string>-->
+<!--    <string name="ppn">JJenis pajak di Indonesia selanjutnya adalah Pajak Pertambahan Nilai (PPN),-->
+<!--        pajak ini dikenakan atas perdagangan barang maupun jasa yang dilakukan wajib pajak.\n-->
+<!--        Kebanyakan wajib pajak adalah Pengusaha Kena Pajak (PKP). Walaupun pada dasarnya pelaku-->
+<!--        usaha adalah penyetor pajak, namun kebanyakan pajak akan ditangguhkan pada pembeli.\n-->
+<!--        PPN ini biasanya berkisar 10% dari harga produk yang dijual. Maka dari itu jika Anda-->
+<!--        perhatikan pajak ini sering Anda jumpai saat membeli produk.\n-->
+<!--        Meskipun PPN dikenakan atas perdagangan barang, hal ini tidak berlaku pada objek restoran.-->
+<!--        Restoran memiliki pajak restoran tersendiri diluar dari objek pajak PPN.</string>-->
 
-    <string name="pajakPPNBM">Pajak Penjualan Barang Mewah</string>
-    <string name="ppnbm">PPnBM merupakan pajak dari penjualan barang mewah dengan banyak kriteria.
-        Berikut beberapa kriteria barang mewah yang diwajibkan membayar PPnBM : \n
-        Barang mewah yang bukan kebutuhan pokok. \n
-        Barang mewah yang dikonsumsi oleh masyarakat tertentu.\n
-        Barang mewah untuk kebutuhan eksistensi atau menunjukkan status.\n
-        Barang mewah yang beresiko merusak kesehatan, mengganggu ketertiban, dan mengganggu
-        kenyamanan masyarakat.\n
-        Kendaraan Mewah.\n
-        Hunian atau properti, dan masih banyak lagi.</string>
+<!--    <string name="pajakPPNBM">Pajak Penjualan Barang Mewah</string>-->
+<!--    <string name="ppnbm">PPnBM merupakan pajak dari penjualan barang mewah dengan banyak kriteria.-->
+<!--        Berikut beberapa kriteria barang mewah yang diwajibkan membayar PPnBM : \n-->
+<!--        Barang mewah yang bukan kebutuhan pokok. \n-->
+<!--        Barang mewah yang dikonsumsi oleh masyarakat tertentu.\n-->
+<!--        Barang mewah untuk kebutuhan eksistensi atau menunjukkan status.\n-->
+<!--        Barang mewah yang beresiko merusak kesehatan, mengganggu ketertiban, dan mengganggu-->
+<!--        kenyamanan masyarakat.\n-->
+<!--        Kendaraan Mewah.\n-->
+<!--        Hunian atau properti, dan masih banyak lagi.</string>-->
 
-    <string name="pajakBM">Bea Materai </string>
-    <string name="bm">Bea Materai termasuk salah satu pajak yang masuk dalam jenis jenis pajak
-        yang berlaku di Indonesia. Pajak ini dibebankan atas pemanfaatan dokumen yang memerlukan
-        meterai.Berbagai contoh dokumen dengan meterai seperti akta notaris, surat kuasa, bukti
-        transaksi, perjanjian jasa dan masih banyak lagi.\n Nilai BM sendiri memiliki ragam nominal
-        untuk ketentuan masing masing, seperti meterai Rp 6000 untuk transaksi dengan nilai diatas
-        250 ribu hingga 5 juta. Ada juga meterai dengan nilai Rp 10.000 untuk nilai transaksi diatas
-        10 juta rupiah.</string>
+<!--    <string name="pajakBM">Bea Materai </string>-->
+<!--    <string name="bm">Bea Materai termasuk salah satu pajak yang masuk dalam jenis jenis pajak-->
+<!--        yang berlaku di Indonesia. Pajak ini dibebankan atas pemanfaatan dokumen yang memerlukan-->
+<!--        meterai.Berbagai contoh dokumen dengan meterai seperti akta notaris, surat kuasa, bukti-->
+<!--        transaksi, perjanjian jasa dan masih banyak lagi.\n Nilai BM sendiri memiliki ragam nominal-->
+<!--        untuk ketentuan masing masing, seperti meterai Rp 6000 untuk transaksi dengan nilai diatas-->
+<!--        250 ribu hingga 5 juta. Ada juga meterai dengan nilai Rp 10.000 untuk nilai transaksi diatas-->
+<!--        10 juta rupiah.</string>-->
 
-    <string name="pajakPAD">Pajak Daerah </string>
-    <string name="pad">Jenis pajak ini berbeda dengan jenis pajak lainnya, karena
-        pajak ini tidak disetorkan ke pusat melainkan sebuah kontribusi wajib untukdaerah dan
-        keperluan daerah. Dalam administrasi negara, khususnya pemda terbagi menjadi pemerintahan
-        provinsi dan pemerintahan kabupaten/kota.</string>
+<!--    <string name="pajakPAD">Pajak Daerah </string>-->
+<!--    <string name="pad">Jenis pajak ini berbeda dengan jenis pajak lainnya, karena-->
+<!--        pajak ini tidak disetorkan ke pusat melainkan sebuah kontribusi wajib untukdaerah dan-->
+<!--        keperluan daerah. Dalam administrasi negara, khususnya pemda terbagi menjadi pemerintahan-->
+<!--        provinsi dan pemerintahan kabupaten/kota.</string>-->
+
     <string name="njkp_x">NJKP : %1$.0f Juta</string>
-    <string name="pajak_x">Pajak Yang Harus Dibayarkan : %1$.0f</string>
+    <string name="pajak_x">Pajak Yang Terutang : %1$.0f </string>
+    <string name="deksHal">Jenis - Jenis Pajak Di Indonesia</string>
+    <string name="rumus">Cara Menghitung PBB</string>
+    <string name="judul_detail">Cara Menghitung PBB</string>
 
+    <string name="penjelasan">Pajak Bumi dan Bangunan (PBB) terdapat nilai jual objek pajak (NJOP),
+        nilai jual objek pajak tidak kena pajak (NJOPTKP), serta nilai jual kena pajak (NJKP).
+        Ketiganya dihitung untuk mencari besaran nilai PBB.
+        \n\n
+        Besaran nilai jual objek pajak tidak kena pajak paling rendah sebesar Rp 10 juta.
+        Besaran nilai pajak ini wajib dibayarkan dalam
+        perhitungan PBB. Berikut cara menghitung pajak bumi dan bangunan:
+        \n\n
+        NJOP = (NJOP Bumi = luas tanah x nilai tanah) + (NJOP Bangunan = luas bangunan x nilai bangunan).
+        NJKP = 20% dari NJOP untuk perhitungan PBB PBB yang terutang = 0,5% x NJKP
+        (jumlah PBB yang harus dibayar setiap tahun)
+        \n\n
+        Contoh kasus perhitungan :
+        Ibu Desi punya properti rumah seluas 60 meter persegi dengan nilai
+        Rp500.000 per meter. Rumahnya berdiri di atas tanah seluas 100 meter
+        persegi dengan nilai Rp1.000.000 per meter. Berikut cara menghitung
+        pajaknya:
+        \n\n
+        • Nilai rumah: 60 x Rp500.000 = Rp30.000.000
+        • Nilai tanah: 100 x Rp1.000.000 = Rp100.000.000
+        • NJOP: Rp30.000.000 + Rp100.000.000 = Rp130.000.000
+        • NJKP: 20% x Rp130.000.000 = Rp26.000.000
+        Nilai Pajak Bumi dan Bangunan yang harus dibayar adalah: 0,5% x Rp26.000.000 = Rp130.000.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">TENTANG APLIKASI</string>
+    <string name="deksAbout">Aplikasi Bijak Pajka merupakan sebuah aplikasi dengan fitur utamanya adalah menghitung Pajak Bumi dan Bangunan yang dimiliki. Selain itu pada aplikasi ini juga dilengkapi dengan fitur - fitur lain. Seperti artikel tentang jenis - jenis pajak yang ada di Indonesia, fitur histori yang berguna untuk melihat inputan atau hitungan pajak yang pernah dilakukan, fitur detail hitung pajak berfungsi untuk memberikan informasi levih lanjut bagaimana rumus perhitungan pajak.
+    \n\n Aplikasi ini untuk keperluan Asessment 1 dan 2 Mobile Programing Android menggunakan kotlin. Source code dapat dilihat di link Github berikut :https://github.com/famella19/BijakPajak--Assessment-Mobpro.git</string>
+    <string name="histori">Data Tidak Tersedia</string>
+    <string name="switch_layout">Ubah Tampilan Layout</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="hapus_histori">Hapus Histori</string>
+    <string name="konfirmasi_hapus">Apakah anda ingin menghapus semua histori ?</string>
+    <string name="batal">Batal</string>
+    <string name="hasil_x">NJKP : %1$.0f Juta</string>
+    <string name="lihat_detail">Informasi</string>
+    <string name="bagikan">Bagikan</string>
+    <string name="judulAbout">Tentang Aplikasi</string>
+    <string name="judulInformasi">Informasi</string>
+    <string name="historiJudul">HISTORI</string>
+    <string name="informasi">INFORMASI</string>
+    <string name="teksBagi">Hasil perhitungan NJKP dan Pajak menggunakan applikasi BijakPajak</string>
 
 </resources>

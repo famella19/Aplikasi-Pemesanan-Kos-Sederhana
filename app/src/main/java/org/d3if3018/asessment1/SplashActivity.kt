@@ -3,11 +3,13 @@ package org.d3if3018.asessment1
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.Window
 import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import org.d3if3018.asessment1.ui.PerhitunganPajak
+import org.d3if3018.asessment1.ui.PerhitunganPajakFragment
 
 class SplashActivity : AppCompatActivity() {
 
@@ -19,8 +21,6 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        // membuat handler jika os yang digunakan versi android R
-        // Karena dapat terjadi flag_fullscreen deprecated
         @Suppress("DEPRECATION")
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             window.insetsController?.hide(WindowInsets.Type.statusBars())
@@ -32,8 +32,12 @@ class SplashActivity : AppCompatActivity() {
             )
         }
 
-        val intent = Intent(this, PerhitunganPajak::class.java)
-        startActivity(intent)
-        finish()
+        val splashTime: Long = 4000 // lama splash (4000 = 4 detik)
+
+        Handler(Looper.getMainLooper()).postDelayed({
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }, splashTime)
     }
 }
