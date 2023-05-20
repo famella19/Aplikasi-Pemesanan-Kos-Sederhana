@@ -32,7 +32,7 @@ class SplashActivity : AppCompatActivity() {
             )
         }
 
-        val splashTime: Long = 4000 // lama splash (4000 = 4 detik)
+        val splashTime: Long = 3000
 
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, MainActivity::class.java)

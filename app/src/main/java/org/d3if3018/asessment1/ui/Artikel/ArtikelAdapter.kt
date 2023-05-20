@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ComputableLiveData
 import androidx.recyclerview.widget.RecyclerView
+import org.d3if3018.asessment1.R
 import org.d3if3018.asessment1.databinding.ListArtikelBinding
 import org.d3if3018.asessment1.model.Artikel
 
@@ -28,7 +29,7 @@ class ArtikelAdapter : RecyclerView.Adapter<ArtikelAdapter.ViewHolder>() {
             gambarPajak.setImageResource(artikel.image)
 
             root.setOnClickListener{
-                val message = "Jenis {model.Artikel.kepanjangan} !!"
+                val message = root.context.getString(R.string.message, artikel.kepanjangan)
                 Toast.makeText(root.context, message, Toast.LENGTH_LONG).show()
             }
         }

@@ -110,7 +110,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="about">TENTANG APLIKASI</string>
-    <string name="deksAbout">Aplikasi Bijak Pajka merupakan sebuah aplikasi dengan fitur utamanya adalah menghitung Pajak Bumi dan Bangunan yang dimiliki. Selain itu pada aplikasi ini juga dilengkapi dengan fitur - fitur lain. Seperti artikel tentang jenis - jenis pajak yang ada di Indonesia, fitur histori yang berguna untuk melihat inputan atau hitungan pajak yang pernah dilakukan, fitur detail hitung pajak berfungsi untuk memberikan informasi levih lanjut bagaimana rumus perhitungan pajak.
+    <string name="deksAbout">Aplikasi Bijak Pajka merupakan sebuah aplikasi dengan fitur utamanya adalah menghitung Pajak Bumi dan Bangunan yang dimiliki. Selain itu pada aplikasi ini juga dilengkapi dengan fitur - fitur lain. Seperti artikel tentang jenis - jenis pajak yang ada di Indonesia, fitur histori yang berguna untuk melihat inputan atau hitungan pajak yang pernah dilakukan, fitur informasi berfungsi untuk memberikan informasi lebih lanjut bagaimana rumus perhitungan pajak.
     \n\n Aplikasi ini untuk keperluan Asessment 1 dan 2 Mobile Programing Android menggunakan kotlin. Source code dapat dilihat di link Github berikut :https://github.com/famella19/BijakPajak--Assessment-Mobpro.git</string>
     <string name="histori">Data Tidak Tersedia</string>
     <string name="switch_layout">Ubah Tampilan Layout</string>
@@ -126,5 +126,6 @@
     <string name="historiJudul">HISTORI</string>
     <string name="informasi">INFORMASI</string>
     <string name="teksBagi">Hasil perhitungan NJKP dan Pajak menggunakan applikasi BijakPajak</string>
+    <string name="message">Jenis  %1$s</string>
 
 </resources>
