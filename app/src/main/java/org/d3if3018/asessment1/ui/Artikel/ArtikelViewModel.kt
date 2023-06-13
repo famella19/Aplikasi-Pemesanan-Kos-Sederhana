@@ -1,27 +1,32 @@
 package org.d3if3018.asessment1.ui.Artikel
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import org.d3if3018.asessment1.R
 import org.d3if3018.asessment1.model.Artikel
+import org.d3if3018.asessment1.network.ArtikelApi
 
 class ArtikelViewModel : ViewModel(){
 
     private val data = MutableLiveData<List<Artikel>>()
 
     init {
-        data.value = initData()
+        retrieveData()
     }
-        private fun initData(): List<Artikel>{
-            return listOf(
-                Artikel("PBB", "Pajak Bumi dan Bangunan", R.drawable.pbbb),
-                Artikel("PPH", "Pajak Penghasilan", R.drawable.penghasilan),
-                Artikel("PPN", "Pajak Pertambahan Nilai", R.drawable.ppn),
-                Artikel("Bea Materai", "Pajak Bea Materai", R.drawable.bm),
-                Artikel("PPnBM", "Pajak Penjualan atas Barang Mewah", R.drawable.ppnbm),
-                Artikel("PAD", "Pajak Daerah", R.drawable.pad),
-            )
+
+    private fun retrieveData(){
+        viewModelScope.launch (Dispatchers.IO){
+            try {
+                data.postValue(ArtikelApi.service.getArtikel())
+            }catch (e: Exception){
+                Log.d("MainViewModel", "Failure: ${e.message}")
+            }
+        }
     }
     fun getData(): LiveData<List<Artikel>> = data
 }

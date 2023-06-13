@@ -5,9 +5,11 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ComputableLiveData
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import org.d3if3018.asessment1.R
 import org.d3if3018.asessment1.databinding.ListArtikelBinding
 import org.d3if3018.asessment1.model.Artikel
+import org.d3if3018.asessment1.network.ArtikelApi
 
 class ArtikelAdapter : RecyclerView.Adapter<ArtikelAdapter.ViewHolder>() {
 
@@ -26,7 +28,10 @@ class ArtikelAdapter : RecyclerView.Adapter<ArtikelAdapter.ViewHolder>() {
         fun bind(artikel: Artikel) = with(binding) {
             jenis.text = artikel.jenis
             subJenis.text = artikel.kepanjangan
-            gambarPajak.setImageResource(artikel.image)
+            Glide.with(gambarPajak.context)
+                .load(ArtikelApi.getArtikelUrl(artikel.image))
+                .error(R.drawable.baseline_broken_image_24)
+                .into(gambarPajak)
 
             root.setOnClickListener{
                 val message = root.context.getString(R.string.message, artikel.kepanjangan)
