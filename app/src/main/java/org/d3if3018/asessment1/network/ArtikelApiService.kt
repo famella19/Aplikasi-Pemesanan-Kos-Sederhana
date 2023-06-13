@@ -33,3 +33,5 @@ object ArtikelApi {
         return "$BASE_URL$image"
     }
 }
+
+enum class ApiStatus {LOADING, SUCCESS, FAILED}

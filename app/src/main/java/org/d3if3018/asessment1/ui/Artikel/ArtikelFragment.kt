@@ -16,6 +16,7 @@ import org.d3if3018.asessment1.R
 import org.d3if3018.asessment1.data.SettingsDataStore
 import org.d3if3018.asessment1.data.dataStore
 import org.d3if3018.asessment1.databinding.FragmentArtikelBinding
+import org.d3if3018.asessment1.network.ApiStatus
 
 class ArtikelFragment : Fragment() {
 
@@ -58,6 +59,25 @@ class ArtikelFragment : Fragment() {
 
         viewModel.getData().observe(viewLifecycleOwner){
             myAdapter.updateData(it)
+        }
+
+        viewModel.getStatus().observe(viewLifecycleOwner) {
+            updateProgress(it)
+        }
+    }
+
+    private fun updateProgress(status: ApiStatus){
+        when(status) {
+            ApiStatus.LOADING -> {
+                binding.progressBar.visibility = View.VISIBLE
+            }
+            ApiStatus.SUCCESS -> {
+                binding.progressBar.visibility = View.VISIBLE
+            }
+            ApiStatus.FAILED -> {
+                binding.progressBar.visibility = View.GONE
+                binding.progressBar.visibility = View.VISIBLE
+            }
         }
     }
 

@@ -127,5 +127,6 @@
     <string name="informasi">INFORMASI</string>
     <string name="teksBagi">Hasil perhitungan NJKP dan Pajak menggunakan applikasi BijakPajak</string>
     <string name="message">Jenis  %1$s</string>
+    <string name="koneksi_error">Koneksi Menghilang</string>
 
 </resources>
