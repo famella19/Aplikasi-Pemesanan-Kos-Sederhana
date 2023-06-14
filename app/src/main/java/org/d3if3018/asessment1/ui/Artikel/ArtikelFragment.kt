@@ -1,7 +1,12 @@
 package org.d3if3018.asessment1.ui.Artikel
 
+import android.Manifest
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
 import android.view.*
+import androidx.annotation.RequiresApi
+import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
@@ -12,6 +17,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.launch
+import org.d3if3018.asessment1.MainActivity
 import org.d3if3018.asessment1.R
 import org.d3if3018.asessment1.data.SettingsDataStore
 import org.d3if3018.asessment1.data.dataStore
@@ -64,6 +70,8 @@ class ArtikelFragment : Fragment() {
         viewModel.getStatus().observe(viewLifecycleOwner) {
             updateProgress(it)
         }
+
+        viewModel.scheduleUpdater(requireActivity().application)
     }
 
     private fun updateProgress(status: ApiStatus){
@@ -76,7 +84,11 @@ class ArtikelFragment : Fragment() {
             }
             ApiStatus.FAILED -> {
                 binding.progressBar.visibility = View.GONE
-                binding.progressBar.visibility = View.VISIBLE
+
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                    requestNotificationPermission()
+                }
+                binding.networkError.visibility = View.VISIBLE
             }
         }
     }
@@ -110,6 +122,21 @@ class ArtikelFragment : Fragment() {
             return true
         }
         return super.onContextItemSelected(item)
+    }
+
+    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
+    private fun requestNotificationPermission() {
+        if (ActivityCompat.checkSelfPermission(
+                requireContext(),
+                Manifest.permission.POST_NOTIFICATIONS
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+            ActivityCompat.requestPermissions(
+                requireActivity(),
+                arrayOf(Manifest.permission.POST_NOTIFICATIONS),
+                MainActivity.PERMISSION_REQUEST_CODE
+            )
+        }
     }
 }
 
